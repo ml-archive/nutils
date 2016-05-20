@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">nutils</string>
+    <string name="title_activity_nkeyboard">NKeyboardActivity</string>
+    <string name="title_activity_nscreen_parameters">NScreenParameters</string>
+</resources>

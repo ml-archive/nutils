@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".nscreenparamsexample.NScreenParametersActivity"
+    tools:showIn="@layout/activity_nscreen_parameters">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nparams_screendensity_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen density: " />
+
+        <TextView
+            android:id="@+id/nparams_screendensity_constant_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen density constant: " />
+
+
+        <TextView
+            android:id="@+id/nparams_screenwidth_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen width: " />
+
+
+        <TextView
+            android:id="@+id/nparams_screenheight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen height: " />
+
+        <TextView
+            android:id="@+id/nparams_screenratio_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen ratio: " />
+
+        <TextView
+            android:id="@+id/nparams_screenxcenter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen xcenter: " />
+
+        <TextView
+            android:id="@+id/nparams_screenycenter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Screen ycenter: " />
+
+        <TextView
+            android:id="@+id/nparams_screensize_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Screen size type: " />
+
+        <TextView
+            android:id="@+id/nparams_frompxtodp_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="From px to dp:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/nparams_frompxtodp_et"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/nparams_frompxtodp_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Convert!"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/nparams_frompxtodp_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="result here" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nparams_fromdptopx_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="From dp to px:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/nparams_fromdptopx_et"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/nparams_fromdptopx_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Convert!"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/nparams_fromdptopx_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="result here" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
