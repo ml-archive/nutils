@@ -18,8 +18,7 @@ public class NDateParser {
      * @return the date represented by {@code dateString}
      */
     public static Date ParseDateFromISOString(String dateString) throws ParseException {
-        Date date = (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US)).parse(dateString);
-        return date;
+        return (new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US)).parse(dateString);
     }
 
     /**
