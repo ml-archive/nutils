@@ -13,6 +13,7 @@ def _archivesBaseName = 'nutils'
 def _name = 'NUtils Library'
 def _description = 'Various tools used in android app development.'
 
+
 afterEvaluate { project ->
     uploadArchives {
         repositories {
