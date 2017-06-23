@@ -1,5 +1,6 @@
 apply plugin: 'signing'
 apply plugin: 'maven'
+apply plugin: 'io.codearte.nexus-staging'
 
 // Username & password for Sonatype, stored in bitrise env vars
 def _ossrhUsername = System.getenv('NEXUS_USERNAME')
@@ -17,6 +18,9 @@ def _archivesBaseName = 'nutils'
 def _name = 'NUtils Library'
 def _description = 'Various tools used in android app development.'
 
+nexusStaging {
+    packageGroup = "dk.nodes"
+}
 
 afterEvaluate { project ->
     uploadArchives {
