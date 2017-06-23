@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import dk.nodes.nutils.nimageurlresizer.NImageUrlResizer;
 import dk.nodes.nutilsprojectexample.nkeyboardexample.NKeyboardActivity;
 import dk.nodes.nutilsprojectexample.nscreenparamsexample.NScreenParametersActivity;
 
@@ -42,5 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
     }
 }
